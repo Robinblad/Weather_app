@@ -1,0 +1,52 @@
+{
+	"name": "registration_app",
+	"private": true,
+	"homepage": "https://github.com/Robinblad/Registration_page",
+	"version": "1.0.1",
+	"author": "Robinblad",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@testing-library/react": "^14.1.2",
+		"@testing-library/user-event": "^14.5.2",
+		"express": "^4.18.2",
+		"lodash.debounce": "^4.0.8",
+		"react": "^18.2.0",
+		"react-bootstrap": "^2.10.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.21.3",
+		"sass": "^1.70.0",
+		"simple-react-validator": "^1.6.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
+		"@babel/preset-react": "^7.23.3",
+		"@babel/preset-typescript": "^7.23.3",
+		"@testing-library/jest-dom": "^6.3.0",
+		"@types/express": "^4.17.21",
+		"@types/jest": "^29.5.11",
+		"@types/lodash.debounce": "^4.0.9",
+		"@types/react": "^18.2.43",
+		"@types/react-dom": "^18.2.17",
+		"@types/testing-library__react": "^10.2.0",
+		"@typescript-eslint/eslint-plugin": "^6.19.1",
+		"@typescript-eslint/parser": "^6.19.1",
+		"@vitejs/plugin-react": "^4.2.1",
+		"babel-jest": "^29.7.0",
+		"eslint": "^8.56.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8"
+	}
+}

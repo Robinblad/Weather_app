@@ -1,0 +1,69 @@
+.forecastContainer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	align-items: center;
+	user-select: none;
+}
+
+Table {
+	border-spacing: 0;
+	width: 94%;
+}
+
+tr {
+	vertical-align: top;
+	text-align: center;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+	max-width: 50px;
+	border-spacing: 0;
+	width: 3%;
+}
+
+.backButton {
+	margin-top: 80px;
+	margin-left: 6vw;
+	align-self: flex-start;
+	text-align: center;
+	width: 120px;
+	height: 35px;
+	border: 1px solid black;
+	border-radius: 7px;
+	font: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+	transition: all ease 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		border: 1px solid #535bf2;
+		cursor: pointer;
+	}
+
+	&:active {
+		transform: scale(0.8);
+		transition: all ease 0.2s;
+		-webkit-transition: all ease 0.2s;
+		-moz-transition: all ease 0.2s;
+		-ms-transition: all ease 0.2s;
+		-o-transition: all ease 0.2s;
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+	}
+}
+
+.forecastTitle {
+	margin-left: 6vw;
+	align-self: flex-start;
+	font-weight: 500;
+}
