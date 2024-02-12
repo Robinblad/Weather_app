@@ -33,7 +33,7 @@ const AutocompleteInput = () => {
 		} catch (error) {
 			console.error("Failed to fetch suggestions", error);
 		}
-		setLoading(false); // Set loading to false after fetching suggestions
+		setLoading(false);  
 	}, 300);
 
 	useEffect(() => {
@@ -60,7 +60,7 @@ const AutocompleteInput = () => {
 					className={styles.search}
 				/>
 				{loading && <p>Loading...</p>}{" "}
-				{/* Display "Loading" when the loading state is true */}
+				 
 				{suggestions.length > 0 && (
 					<ListGroup>
 						{suggestions.map((city, index) => (
