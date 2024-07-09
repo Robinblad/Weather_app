@@ -1,15 +1,24 @@
 .forecastContainer {
-	height: 100vh;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	gap: 2px;
 	align-items: center;
 	user-select: none;
+	padding-bottom: 10vh;
 }
 
 Table {
 	border-spacing: 0;
 	width: 94%;
+	border: 1px solid black;
+	padding: 10px;
+	padding-top: 4vh;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
 
 tr {
@@ -66,4 +75,93 @@ td {
 	margin-left: 6vw;
 	align-self: flex-start;
 	font-weight: 500;
+	margin-bottom: 6vh;
+}
+
+@media screen and (max-width: 1000px) {
+	.backButton {
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.forecastTitle {
+		font-size: 21px;
+		margin-top: 3vh;
+		margin-bottom: 4vh;
+	}
+
+	Table {
+		font-size: 14px;
+		padding-top: 3vh;
+	}
+
+	.backButton {
+		height: 28px;
+		width: 114px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.forecastTitle {
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	Table {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.forecastContainer {
+		padding-bottom: 0vh;
+	}
+
+	.forecastTitle {
+		font-size: 18px;
+		margin-bottom: 3vh;
+	}
+
+	Table {
+		padding-top: 2vh;
+		padding-bottom: 1vh;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.forecastTitle {
+		font-size: 16px;
+		margin-bottom: 3vh;
+	}
+
+	Table {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.backButton {
+		height: 26px;
+	}
+
+	Table {
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.backButton {
+		width: 100px;
+		font-size: 14px;
+	}
+
+	.forecastTitle {
+		font-size: 15px;
+	}
+
+	Table {
+		font-size: 11px;
+	}
 }
