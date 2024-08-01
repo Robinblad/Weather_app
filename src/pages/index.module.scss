@@ -15,13 +15,15 @@
 	border: 1px solid black;
 	margin: 10px;
 	padding-left: 8px;
+	padding-top: 25px;
+	padding-bottom: 10px;
 	user-select: none;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	border-radius: 10px;
-	height: 160px;
+	height: 170px;
 	width: 30vw;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -34,6 +36,7 @@
 	-o-transition: all ease 0.4s;
 
 	&:hover {
+		border: 1px solid rgb(146, 146, 146);
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		transition: all ease 0.4s;
 		-webkit-transition: all ease 0.4s;
@@ -50,7 +53,7 @@
 
 .title {
 	position: absolute;
-	top: 100px;
+	top: 82px;
 	left: 125px;
 	font-weight: 500;
 	user-select: none;
@@ -93,10 +96,45 @@
 	}
 }
 
+.weatherImage {
+	position: absolute;
+	transform: translate(23vw, -11vh);
+	opacity: 0.6;
+	filter: sepia(100%) hue-rotate(355deg);
+	width: 110px;
+	height: auto;
+	z-index: -10;
+	-webkit-filter: sepia(100%) hue-rotate(355deg);
+	-webkit-transform: translate(23vw, -11vh);
+	-moz-transform: translate(23vw, -11vh);
+	-ms-transform: translate(23vw, -11vh);
+	-o-transform: translate(23vw, -11vh);
+}
+
+@media screen and (max-width: 1400px) {
+	.weatherImage {
+		transform: translate(22vw, -11vh);
+		-webkit-transform: translate(22vw, -11vh);
+		-moz-transform: translate(22vw, -11vh);
+		-ms-transform: translate(22vw, -11vh);
+		-o-transform: translate(22vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.weatherImage {
+		transform: translate(21vw, -11vh);
+		-webkit-transform: translate(21vw, -11vh);
+		-moz-transform: translate(21vw, -11vh);
+		-ms-transform: translate(21vw, -11vh);
+		-o-transform: translate(21vw, -11vh);
+	}
+}
+
 @media screen and (max-width: 1070px) {
 	.wreaper {
 		padding-top: 190px;
-		height: 600px;
+		height: 700px;
 		transform: translateY(0px);
 		-webkit-transform: translateY(0px);
 		-moz-transform: translateY(0px);
@@ -105,7 +143,35 @@
 	}
 
 	.cityCard {
-		width: 40vw;
+		width: 44vw;
+	}
+
+	.weatherImage {
+		transform: translate(34vw, -11vh);
+		-webkit-transform: translate(34vw, -11vh);
+		-moz-transform: translate(34vw, -11vh);
+		-ms-transform: translate(34vw, -11vh);
+		-o-transform: translate(34vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.weatherImage {
+		transform: translate(33vw, -11vh);
+		-webkit-transform: translate(33vw, -11vh);
+		-moz-transform: translate(33vw, -11vh);
+		-ms-transform: translate(33vw, -11vh);
+		-o-transform: translate(33vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.weatherImage {
+		transform: translate(31vw, -11vh);
+		-webkit-transform: translate(31vw, -11vh);
+		-moz-transform: translate(31vw, -11vh);
+		-ms-transform: translate(31vw, -11vh);
+		-o-transform: translate(31vw, -11vh);
 	}
 }
 
@@ -114,13 +180,9 @@
 		padding-top: 180px;
 		height: 720px;
 	}
-	.cityCard {
-		margin: 20px;
-		padding: 10px;
-	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
 	.wreaper {
 		padding-top: 110px;
 		display: flex;
@@ -130,12 +192,194 @@
 		height: 1500px;
 	}
 	.cityCard {
-		width: 60vw;
+		width: 70vw;
+	}
+
+	.weatherImage {
+		transform: translate(55vw, -11vh);
+		-webkit-transform: translate(55vw, -11vh);
+		-moz-transform: translate(55vw, -11vh);
+		-ms-transform: translate(55vw, -11vh);
+		-o-transform: translate(55vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.weatherImage {
+		transform: translate(54vw, -11vh);
+		-webkit-transform: translate(54vw, -11vh);
+		-moz-transform: translate(54vw, -11vh);
+		-ms-transform: translate(54vw, -11vh);
+		-o-transform: translate(54vw, -11vh);
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.cityCard {
-		width: 70vw;
+		width: 80vw;
+	}
+
+	.weatherImage {
+		transform: translate(60vw, -11vh);
+		-webkit-transform: translate(60vw, -11vh);
+		-moz-transform: translate(60vw, -11vh);
+		-ms-transform: translate(60vw, -11vh);
+		-o-transform: translate(60vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.cityCard {
+		width: 90vw;
+	}
+
+	.weatherImage {
+		transform: translate(70vw, -11vh);
+		-webkit-transform: translate(70vw, -11vh);
+		-moz-transform: translate(70vw, -11vh);
+		-ms-transform: translate(70vw, -11vh);
+		-o-transform: translate(70vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.title {
+		left: 95px;
+	}
+
+	.weatherImage {
+		transform: translate(66vw, -9vh);
+		-webkit-transform: translate(66vw, -9vh);
+		-moz-transform: translate(66vw, -9vh);
+		-ms-transform: translate(66vw, -9vh);
+		-o-transform: translate(66vw, -9vh);
+	}
+
+	.button {
+		margin-top: 12px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.title {
+		top: 74px;
+		left: 85px;
+	}
+
+	.wreaper {
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+	}
+
+	.weatherImage {
+		transform: translate(64vw, -9vh);
+		-webkit-transform: translate(64vw, -9vh);
+		-moz-transform: translate(64vw, -9vh);
+		-ms-transform: translate(64vw, -9vh);
+		-o-transform: translate(64vw, -9vh);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.title {
+		left: 75px;
+	}
+
+	.cityCard {
+		width: 92vw;
+	}
+
+	.weatherImage {
+		transform: translate(66vw, -9vh);
+		-webkit-transform: translate(66vw, -9vh);
+		-moz-transform: translate(66vw, -9vh);
+		-ms-transform: translate(66vw, -9vh);
+		-o-transform: translate(66vw, -9vh);
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.title {
+		top: 65px;
+		left: 82px;
+		font-size: 28px;
+	}
+
+	.wreaper {
+		transform: translateY(-45px);
+		-webkit-transform: translateY(-45px);
+		-moz-transform: translateY(-45px);
+		-ms-transform: translateY(-45px);
+		-o-transform: translateY(-45px);
+	}
+
+	.weatherImage {
+		transform: translate(65vw, -11vh);
+		-webkit-transform: translate(65vw, -11vh);
+		-moz-transform: translate(65vw, -11vh);
+		-ms-transform: translate(65vw, -11vh);
+		-o-transform: translate(65vw, -11vh);
+	}
+
+	.button {
+		height: 34px;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.title {
+		top: 64px;
+		left: 81px;
+		font-size: 26px;
+	}
+
+	.wreaper {
+		transform: translateY(-48px);
+		-webkit-transform: translateY(-48px);
+		-moz-transform: translateY(-48px);
+		-ms-transform: translateY(-48px);
+		-o-transform: translateY(-48px);
+	}
+
+	.weatherImage {
+		transform: translate(64vw, -11vh);
+		-webkit-transform: translate(64vw, -11vh);
+		-moz-transform: translate(64vw, -11vh);
+		-ms-transform: translate(64vw, -11vh);
+		-o-transform: translate(64vw, -11vh);
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.title {
+		top: 62px;
+		left: 70px;
+		font-size: 23px;
+	}
+
+	.wreaper {
+		transform: translateY(-70px);
+		-webkit-transform: translateY(-70px);
+		-moz-transform: translateY(-70px);
+		-ms-transform: translateY(-70px);
+		-o-transform: translateY(-70px);
+	}
+
+	.weatherImage {
+		width: 90px;
+		transform: translate(65vw, -10vh);
+		-webkit-transform: translate(65vw, -10vh);
+		-moz-transform: translate(65vw, -10vh);
+		-ms-transform: translate(65vw, -10vh);
+		-o-transform: translate(65vw, -10vh);
+	}
+
+	.button {
+		height: 32px;
+		width: 180px;
 	}
 }
